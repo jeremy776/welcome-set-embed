@@ -22,3 +22,5 @@ client.on('message', async message => {
     console.log(e.message)
   };
 });
+
+client.login(config.token)
