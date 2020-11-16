@@ -1,11 +1,11 @@
-# welcome-set-embed
+## welcome-set-embed
 
 Install
 ```js
 npm i
 ```
 
-### Setup
+# Setup
 + change prefix
 + put token
 ```js
