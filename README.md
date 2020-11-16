@@ -2,7 +2,7 @@
 
 Install
 ```js
-npm i
+npm install
 ```
 
 # Setup
