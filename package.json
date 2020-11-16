@@ -7,7 +7,9 @@
     "start": "node server.js"
    },
    "dependencies": {
-     "discord.js": "^12.4.0"
+     "discord.js": "^12.4.0",
+     "fs": "^0.0.2",
+     "quick.db": "^7.1.2"
    },
    "engines": {
      "node": "12.x"
