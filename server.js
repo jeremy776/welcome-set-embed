@@ -23,4 +23,19 @@ client.on('message', async message => {
   };
 });
 
+client.on('guildMemberAdd',  (member) => {
+  
+  let ch1 = db.get(`channel-${member.guild.id}`);
+  let ch = client.channels.cache.get(ch1);
+  
+  let embed = new Discord.MessageEmbed()
+  .setAuthor(`Welcome to ${member.guild.name}`, member.guild.iconURL({dynamic:true}))
+  .addField('Username:', member.user.tag)
+  .addField('Account created', member.user.createdAt)
+  .setColor('random')
+  .addField('Position', member.guild.memberCount + ' Members')
+  ch.send(embed)
+  
+});
+
 client.login(config.token)
